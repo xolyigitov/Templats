@@ -1,0 +1,149 @@
+@import 'fonts.css';
+
+/* **** Root **** */
+
+
+:root {
+    --MB: 'Montserrat-Bold';
+    --MEB: 'Montserrat-ExtraBold';
+    --MM: 'Montserrat-Medium';
+    --MR: 'Montserrat-Regular';
+    --MS: 'Montserrat-SemiBold';
+    --white: #FFF;
+    --dark: #323232;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav-line {
+    width: 100%;
+}
+
+.nav-line::after {
+    opacity: 0.5;
+    background: #A1A1A1;
+    content: "";
+    display: block;
+    height: 1px;
+}
+
+
+
+body {
+    background: var(--white) !important;
+}
+
+.btn {
+    border-radius: 30px;
+    border-radius: 30px;
+    background: var(--Accent, #4985FF);
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+    padding: 13px 36px;
+    color: rgb(236, 230, 230);
+    font-family: var(--MM);
+    font-size: 16px;
+    line-height: 20px;
+    transition: all 500ms;
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+}
+
+.btn:hover {
+    background: var(--Accent, #3777f7);
+}
+
+/* ***Root end *** */
+
+
+.header {
+    background: url(../images/header.Bg.png) no-repeat center /cover;
+    height: 100vh;
+}
+
+
+
+.header-nav__list {
+    display: flex;
+    justify-content: end;
+    column-gap: 40px;
+
+}
+
+.header-nav__link {
+    color: var(--white);
+    font-family: var(--MR);
+    font-size: 14px;
+    line-height: 17px;
+    transition: all 500ms;
+    border-radius: 3px 3px 0px 0px;
+    padding: 40px 0 40px 0;
+    display: block;
+
+}
+
+.header-nav__link:hover {
+    color: var(--white);
+
+}
+
+.header-nav__link:hover.header-nav__link::after {
+    width: 100%;
+}
+
+.header-nav__link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: var(--white);
+    bottom: 0;
+    width: 0%;
+    transition: all 500ms;
+
+}
+
+
+
+/* *** Nav end  *** */
+
+.header-content__box {
+    padding-top: 220px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.header-box__text {
+    padding-top: 20px;
+    padding-bottom: 63px;
+    color: var(--white);
+    text-align: center;
+    font-family: var(--MEB);
+    font-size: 48px;
+    line-height: 134.09%;
+    /* 64.363px */
+}
+
+.header-box__title {
+    color: var(--white);
+    text-align: center;
+    /* p */
+    font-family: var(--MM);
+    font-size: 16px;
+    line-height: 44px;
+
+}

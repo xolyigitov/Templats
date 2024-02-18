@@ -1,0 +1,111 @@
+@import 'fonts.css';
+
+/* **** Root **** */
+
+
+:root {
+    --MB: 'Montserrat-Bold';
+    --MEB: 'Montserrat-ExtraBold';
+    --MM: 'Montserrat-Medium';
+    --MR: 'Montserrat-Regular';
+    --MS: 'Montserrat-SemiBold';
+    --white: #FFF;
+    --dark: #323232;
+    --blue: #4985FF;
+}
+
+
+/* **** Root end **** */
+
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.end-icon {
+    border: 1px solid #ffffff;
+    border-radius: 200px;
+    color: #FFF;
+    max-width: 250px;
+    width: 100%;
+    height: 100px;
+    padding: 40px 20px 40px 60px;
+    margin-top: -250px;
+}
+
+
+.end-content {
+    text-align: center;
+    padding-bottom: 85px;
+    margin-top: 200px;
+}
+
+
+.end-content__right-search {
+    max-width: 300px;
+    width: 100%;
+    height: 45px;
+    flex-shrink: 0;
+    margin-right: -30px;
+    padding: 8px 12px;
+    border-radius: 30px;
+    border: 1px solid var(--f-2-f-2-f-2, #F2F2F2);
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+}
+
+.end-content__right-btn {
+    max-width: 190px;
+    width: 100%;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 0px 30px 30px 0px;
+    background: var(--Accent, #4985FF);
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+
+
+}
+
+.end-content__right-btn__text {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--MM);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.end-content__text {
+    padding: 20px 0 30px 0;
+    color: var(--grey, #999);
+    text-align: center;
+    /* p>h2 */
+    font-family: var(--MR);
+    font-size: 16px;
+    line-height: 158.47%;
+    /* 25.355px */
+
+}
+
+
+.end-content__title {
+    color: #000;
+    /* h3 */
+    font-family: var(--MS);
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+
+.end-content__last-text {
+    padding-top: 35px;
+    color: var(--grey, #999);
+    text-align: center;
+    font-family: var(--MR);
+    font-size: 13px;
+    line-height: 158.47%;
+    /* 20.601px */
+}
