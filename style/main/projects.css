@@ -1,0 +1,96 @@
+@import "../fonts.css";
+
+/* **** Root **** */
+
+
+:root {
+    --MB: 'Montserrat-Bold';
+    --MEB: 'Montserrat-ExtraBold';
+    --MM: 'Montserrat-Medium';
+    --MR: 'Montserrat-Regular';
+    --MS: 'Montserrat-SemiBold';
+    --white: #FFF;
+    --dark: #323232;
+    --blue: #4985FF;
+}
+
+
+/* **** Root end **** */
+
+
+
+.projects {
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projects-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.projects-items__title {
+    padding-top: 100px;
+    text-align: center;
+    color: #000;
+    /* h2 */
+    font-family: var(--MB);
+    font-size: 36px;
+    line-height: 146.28%;
+    /* 52.661px */
+}
+
+.projects-items__text {
+    max-width: 730px;
+    width: 100%;
+    color: var(--grey, #999);
+    /* p>h2 */
+    font-family: var(--MR);
+    font-size: 16px;
+    line-height: 158.47%;
+    /* 25.355px */
+    padding: 50px;
+}
+
+.projects-link {
+    margin: 50px 0 130px 0;
+    background-color: #4985FF;
+}
+
+
+
+.projects-catalog {
+    height: 80vh;
+    width: 100%;
+    background: url(../../images/Rectangle.png) no-repeat center /cover;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -370px;
+}
+
+
+
+.projects-catalog__title {
+    color: var(--white);
+    /* h2 */
+    font-family: var(--MR);
+    font-size: 36px;
+    line-height: 146.28%;
+    /* 52.661px */
+    padding-top: 70px;
+}
+
+.projects-catalog__text {
+    padding-top: 30px;
+    color: var(--white);
+    /* p>h2 */
+    font-family: var(--MR);
+    font-size: 16px;
+    line-height: 158.47%;
+    /* 25.355px */
+}

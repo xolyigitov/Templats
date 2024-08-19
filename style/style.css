@@ -1,0 +1,286 @@
+@import "fonts.css";
+
+/* **** Root **** */
+
+:root {
+  --MB: "Montserrat-Bold";
+  --MEB: "Montserrat-ExtraBold";
+  --MM: "Montserrat-Medium";
+  --MR: "Montserrat-Regular";
+  --MS: "Montserrat-SemiBold";
+  --white: #fff;
+  --dark: #323232;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.nav-line {
+  width: 100%;
+}
+
+.nav-line::after {
+  opacity: 0.5;
+  background: #a1a1a1;
+  content: "";
+  display: block;
+  height: 1px;
+}
+
+body {
+  background: var(--white) !important;
+}
+
+.btn {
+  border-radius: 30px;
+  border-radius: 30px;
+  background: var(--Accent, #4985ff);
+  box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+  padding: 13px 36px;
+  color: rgb(236, 230, 230);
+  font-family: var(--MM);
+  font-size: 16px;
+  line-height: 20px;
+  transition: all 500ms;
+  box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+}
+
+.btn:hover {
+  background: var(--Accent, #3777f7);
+}
+
+/* ***Root end *** */
+
+.header {
+  background: url(../images/header.Bg.png) no-repeat center / cover;
+  height: 100vh;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  backdrop-filter: blur(30px);
+  transition: 500ms;
+  padding: 20px;
+  width: 100%;
+}
+.header-nav__list {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  transition: 500ms;
+}
+
+.header-nav__link {
+  text-align: center;
+  color:#04fb7b ;
+  font-family: var(--MR);
+  font-size: 14px;
+  line-height: 17px;
+  transition: all 500ms;
+  border-radius: 3px 3px 0px 0px;
+  padding: 40px 0;
+  transition: 500ms;
+}
+
+.header-nav__link:hover {
+  color:  #0865fa;
+}
+
+.header-nav__link:hover.header-nav__link::after {
+  width: 100%;
+}
+
+.header-nav__link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--white);
+  bottom: 0;
+  width: 0%;
+  transition: all 500ms;
+}
+
+/* *** Nav end  *** */
+
+.header-content__box {
+  padding-top: 220px;
+  text-align: center;
+  align-items: center;
+}
+
+.header-box__text {
+  padding-top: 20px;
+  padding-bottom: 63px;
+  color: var(--white);
+  text-align: center;
+  font-family: var(--MEB);
+  font-size: 48px;
+  line-height: 134.09%;
+  /* 64.363px */
+}
+
+.header-box__title {
+  color: var(--white);
+  text-align: center;
+  /* p */
+  font-family: var(--MM);
+  font-size: 16px;
+  line-height: 44px;
+}
+.header-content__box {
+  padding-top: 220px;
+  text-align: center;
+  align-items: center;
+  /* Umumiy o'zgarishlar uchun: */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Katta ekranlar uchun (masalan, desktop): */
+@media (max-width: 600px) {
+  .nav {
+    padding: 0px;
+  }
+  .header-nav__list {
+    display: none;
+  }
+  .header-nav__list.active {
+    display: flex;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .menu-btn {
+    margin:10px 10px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  /* .menu-btn {
+        filter: invert(30%);
+        z-index: 999;
+    } */
+
+  .menu-btn.active {
+    background-color: rgba(15, 233, 117, 0.905);
+  }
+
+  .menu-btn.active span {
+    height: 0;
+  }
+
+  .menu-btn.active span::before {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn.active span::after {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #070707;
+  }
+
+  .menu-btn span::before,
+  .menu-btn span::after {
+    content: "";
+    display: block;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn span::before {
+    content: "";
+    transform: translateY(-5px);
+  }
+
+  .menu-btn span::after {
+    content: "";
+    transform: translateY(5px);
+  }
+}
+@media (min-width: 992px) {
+  .header-box__text {
+    font-size: 48px;
+    line-height: 134.09%;
+  }
+
+  .header-box__title {
+    font-size: 16px;
+    line-height: 44px;
+  }
+}
+
+/* O'rta ekranlar uchun (masalan, planshet): */
+@media (max-width: 991px) and (min-width: 768px) {
+  .header-content__box {
+    padding-top: 150px; /* Kichikroq padding */
+  }
+
+  .header-box__text {
+    font-size: 36px; /* Kichikroq matn hajmi */
+    line-height: 120%;
+  }
+
+  .header-box__title {
+    font-size: 14px; /* Kichikroq matn hajmi */
+    line-height: 36px;
+  }
+}
+
+/* Kichik ekranlar uchun (masalan, mobil telefonlar): */
+@media (max-width: 767px) {
+  .header-nav__link {
+    font-size: 12px;
+    padding: 30px 0 30px 0;
+  }
+  .header-content__box {
+    padding-top: 100px; /* Kichikroq padding */
+  }
+
+  .header-box__text {
+    font-size: 24px; /* Kichikroq matn hajmi */
+    line-height: 110%;
+  }
+
+  .header-box__title {
+    font-size: 12px; /* Kichikroq matn hajmi */
+    line-height: 30px;
+  }
+}
+@media (max-width: 488px) {
+  .header-nav__link {
+    color: var(--white);
+    font-family: var(--MR);
+    font-size: 12px;
+    line-height: 10px;
+    transition: all 500ms;
+    border-radius: 3px 3px 0px 0px;
+    padding: 20px 0 20px 0;
+    display: block;
+  }
+}

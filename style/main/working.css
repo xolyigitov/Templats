@@ -1,0 +1,195 @@
+@import "../fonts.css";
+
+/* **** Root **** */
+
+:root {
+    --MB: 'Montserrat-Bold';
+    --MEB: 'Montserrat-ExtraBold';
+    --MM: 'Montserrat-Medium';
+    --MR: 'Montserrat-Regular';
+    --MS: 'Montserrat-SemiBold';
+    --white: #FFF;
+    --dark: #323232;
+    --blue: #4985FF;
+}
+
+/* Default styling for larger screens */
+.line {
+    width: 100%;
+}
+
+.line::after {
+    background: #E0E0E0;
+    content: "";
+    display: block;
+    height: 1px;
+    margin-top: 90px;
+}
+
+.working {
+    padding-top: 152px;
+    background: #F6F6F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.working-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.working-item__right-title {
+    color: var(--dark, #323232);
+    font-family: var(--MB);
+    font-size: 36px;
+    line-height: 146.28%;
+    max-width: 424px;
+    width: 100%;
+}
+
+.working-item__right-text {
+    color: var(--grey, #999);
+    font-family: var(--MR);
+    font-size: 16px;
+    line-height: 158.47%;
+    max-width: 489px;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.working-item__right-link {
+    color: var(--Accent, #4985FF);
+    font-family: var(--MM);
+    font-size: 16px;
+    text-decoration-line: underline;
+}
+
+.working-end {
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.working-end__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.working-end__box {
+    display: flex;
+}
+
+.working-end__number {
+    color: var(--dark);
+    font-family: var(--MM);
+    font-size: 26px;
+    line-height: 146.28%;
+    margin-left: 20px;
+}
+
+.working-end__title {
+    color: var(--grey, #999);
+    font-family: var(--MM);
+    font-size: 16px;
+    line-height: 158.47%;
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+    .line::after {
+        margin-top: 60px; /* Reduced margin for smaller screens */
+    }
+
+    .working {
+        padding-top: 100px; /* Adjust padding for smaller screens */
+    }
+
+    .working-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .working-item__right-title {
+        font-size: 28px; /* Smaller font size for medium screens */
+        line-height: 140%;
+    }
+
+    .working-item__right-text {
+        font-size: 14px; /* Smaller font size */
+        line-height: 150%;
+        margin-top: 20px; /* Reduced margin for medium screens */
+        margin-bottom: 20px;
+    }
+    .working-right__images{
+        margin-top: 20px;
+    }
+    .working-end {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        margin-top: 50px; /* Reduced margin for medium screens */
+        margin-bottom: 50px;
+    }
+
+    .working-end__number {
+        font-size: 22px; /* Smaller font size */
+        margin-left: 0; /* Remove margin-left */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    .working-end__title {
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 767px) {
+    .line::after {
+        margin-top: 30px; /* Further reduced margin for small screens */
+    }
+
+    .working {
+        padding-top: 60px; /* Further reduced padding */
+    }
+
+    .working-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+    .working-right__images{
+        margin-top: 20px;
+        width: 70%;
+    }
+    .working-item__right-title {
+        font-size: 24px; /* Even smaller font size for small screens */
+        line-height: 130%;
+    }
+
+    .working-item__right-text {
+        font-size: 12px; /* Smaller font size */
+        line-height: 140%;
+        margin-top: 15px; /* Further reduced margin */
+        margin-bottom: 15px;
+    }
+
+    .working-end {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        margin-top: 30px; /* Further reduced margin */
+        margin-bottom: 30px;
+    }
+
+    .working-end__number {
+        font-size: 18px; /* Smaller font size */
+        margin-left: 0; /* Remove margin-left */
+        margin-bottom: 5px; /* Add bottom margin */
+    }
+
+    .working-end__title {
+        font-size: 12px; /* Smaller font size */
+    }
+}

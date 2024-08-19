@@ -1,0 +1,128 @@
+@import 'fonts.css';
+
+/* **** Root **** */
+
+:root {
+    --MB: 'Montserrat-Bold';
+    --MEB: 'Montserrat-ExtraBold';
+    --MM: 'Montserrat-Medium';
+    --MR: 'Montserrat-Regular';
+    --MS: 'Montserrat-SemiBold';
+    --white: #FFF;
+    --dark: #323232;
+    --blue: #4985FF;
+}
+
+/* **** Root end **** */
+
+.footer {
+    background: #F6F6F8;
+    padding-top: 70px;
+    flex-shrink: 0;
+    margin-top: 100px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    flex-wrap: wrap; /* Added to handle smaller screens */
+}
+
+.footer-box__group {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box__title {
+    padding-bottom: 35px;
+    font-family: var(--MB);
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.footer-box__icon {
+    padding-bottom: 30px;
+    color: var(--grey, #999);
+    font-size: 14px;
+    line-height: 158.47%;
+}
+
+.footer-box__icons {
+    display: flex;
+    flex-direction: column;
+    padding-right: 43px;
+}
+
+.footer-box__icons-icon {
+    color: var(--grey, #999);
+    padding-bottom: 30px;
+    font-size: 14px;
+    line-height: 158.47%;
+}
+
+.list {
+    opacity: 0.5;
+    width: 100%;
+}
+
+.list::after {
+    background: #ffffff;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+}
+
+/* Responsive styling for tablets and larger mobile devices */
+@media (max-width: 991px) and (min-width: 768px) {
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box__group {
+        margin-bottom: 30px;
+    }
+
+    .footer-box__title {
+        font-size: 16px;
+    }
+
+    .footer-box__icon {
+        font-size: 12px;
+    }
+
+    .footer-box__icons-icon {
+        font-size: 12px;
+    }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 767px) {
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-box__group {
+        margin-bottom: 20px;
+    }
+
+    .footer-box__title {
+        font-size: 14px;
+    }
+
+    .footer-box__icon {
+        font-size: 11px;
+    }
+
+    .footer-box__icons-icon {
+        font-size: 11px;
+    }
+
+    .footer-end__title {
+        font-size: 12px;
+        padding: 20px 0;
+    }
+}

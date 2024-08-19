@@ -1,0 +1,30 @@
+@import "../fonts.css";
+
+/* **** Root **** */
+
+
+:root {
+    --MB: 'Montserrat-Bold';
+    --MEB: 'Montserrat-ExtraBold';
+    --MM: 'Montserrat-Medium';
+    --MR: 'Montserrat-Regular';
+    --MS: 'Montserrat-SemiBold';
+    --white: #FFF;
+    --dark: #323232;
+    --blue: #4985FF;
+}
+
+
+
+/* **** Root end **** */
+
+
+
+
+.items-content {
+
+    flex-shrink: 0;
+}
+
+
+
